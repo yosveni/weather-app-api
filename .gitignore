@@ -164,5 +164,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-/devgrid
+/venv_weather
 .idea/
