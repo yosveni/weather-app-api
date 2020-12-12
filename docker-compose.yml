@@ -1,0 +1,26 @@
+version: "3.3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=weather
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root2020
+  web:
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - migration
+      - db
+  migration:
+    image: postgres
+    command: python3 manage.py migrate --noinput
+    volumes:
+      - .:/code
+    depends_on:
+      - db
