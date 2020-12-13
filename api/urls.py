@@ -10,5 +10,4 @@ router.register('weather', WeatherViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    # path('get_data/', get_data, name='get_data')
 ]

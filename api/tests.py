@@ -11,6 +11,7 @@ from .serializers import *
 
 client = APIClient()
 
+
 class WeatherViewSetTestCase(APITestCase):
     def setUp(self):
         self.user = User(
