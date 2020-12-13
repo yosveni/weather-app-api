@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'weather',
         'USER': 'postgres',
         'PASSWORD': 'root2020',
-        'HOST': 'db',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
