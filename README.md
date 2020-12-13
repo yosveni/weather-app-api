@@ -50,3 +50,6 @@ Docker
 7- `docker-compose run web python manage.py createsuperuser`<br/>
 8- `docker-compose up`<br/>
 9- Ready!!
+# Test
+- `python3 manage.py test` without docker
+- `docker-compose run web python3 manage.py test` with docker
