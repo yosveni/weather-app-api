@@ -53,3 +53,6 @@ Docker
 # Test
 - `python3 manage.py test` without docker
 - `docker-compose run web python3 manage.py test` with docker
+# Endpoint
+`POST`
+http://127.0.0.1:8000/api/weather/{user_id}/add_weather/
